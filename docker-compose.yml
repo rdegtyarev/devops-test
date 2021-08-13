@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  app:
+    build: ./images/python
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/usr/src/app
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus:/etc/prometheus/
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    restart: always
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
