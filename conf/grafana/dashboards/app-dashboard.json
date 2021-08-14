@@ -116,12 +116,12 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "App monitoring dashboard",
   "uid": "rQssjM77k",
-  "version": 1
+  "version": 6
 }

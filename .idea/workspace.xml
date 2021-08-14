@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce5d7588-62a2-419e-8318-6c033c458f24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/dashboards/local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/datasources/prometheus.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/images/grafana/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus/prometheus.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/grafana/dashboards/app-dashboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/grafana/dashboards/app-dashboard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/grafana/dashboards/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/grafana/dashboards/dashboards.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/grafana/datasources/prometheus.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/grafana/datasources/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +25,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/conf/prometheus/prometheus.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/conf/grafana/dashboards/local.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/conf/grafana/datasources/prometheus.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/conf/grafana/dashboards/dashboards.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/conf/grafana/datasources/prometheus.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1wfaujah2uQTK9Uqbbb7wuxOrTb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
