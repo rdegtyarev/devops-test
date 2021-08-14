@@ -1,4 +1,4 @@
-FROM grafana/grafana:7.1.5-ubuntu
+FROM grafana/grafana:latest
 
 # Disable Login form or not
 ENV GF_AUTH_DISABLE_LOGIN_FORM "true"
@@ -10,8 +10,9 @@ ENV GF_AUTH_ANONYMOUS_ORG_ROLE "Admin"
 # ENV GF_INSTALL_PLUGINS="<list of plugins seperated by ,"
 
 # Add provisioning
-ADD ./provisioning /etc/grafana/provisioning
+# ADD ./datasources /etc/grafana/provisioning/datasources
+# ADD ./dashboards /etc/grafana/provisioning/dashboards
 # Add configuration file
-ADD ./grafana.ini /etc/grafana/grafana.ini
+# ADD ./grafana.ini /etc/grafana/grafana.ini
 # Add dashboard json files
-ADD ./dashboards /etc/grafana/dashboards
+# ADD ./dashboards /etc/grafana/dashboards

@@ -9,13 +9,16 @@ services:
   prometheus:
     image: prom/prometheus:latest
     volumes:
-      - ./prometheus:/etc/prometheus/
+      - ./conf/prometheus:/etc/prometheus/
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
     restart: always
   grafana:
-    image: grafana/grafana
+    build: ./images/grafana
+    volumes:
+      - ./conf/grafana/datasources:/etc/grafana/provisioning/datasources
+      - ./conf/grafana/dashboards:/etc/grafana/provisioning/dashboards
     ports:
       - 3000:3000

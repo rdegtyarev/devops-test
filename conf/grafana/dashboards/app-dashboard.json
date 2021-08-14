@@ -21,11 +21,11 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "panels": [
     {
-      "datasource": null,
+      "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -49,14 +49,14 @@
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "auto",
+            "showPoints": "always",
             "spanNulls": false,
             "stacking": {
               "group": "A",
               "mode": "none"
             },
             "thresholdsStyle": {
-              "mode": "off"
+              "mode": "area"
             }
           },
           "mappings": [],
@@ -69,7 +69,7 @@
               },
               {
                 "color": "red",
-                "value": 79.9999
+                "value": 80
               }
             ]
           }
@@ -83,6 +83,7 @@
         "y": 0
       },
       "id": 2,
+      "interval": "5s",
       "options": {
         "legend": {
           "calcs": [],
@@ -93,15 +94,13 @@
           "mode": "single"
         }
       },
-      "pluginVersion": "8.1.1",
       "targets": [
         {
-          "exemplar": false,
-          "expr": "hello_world_counter",
-          "format": "time_series",
-          "instant": false,
+          "exemplar": true,
+          "expr": "rate(hello_world_counter{}[$__rate_interval])",
           "interval": "",
           "legendFormat": "",
+          "queryType": "randomWalk",
           "refId": "A"
         }
       ],
@@ -109,7 +108,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
@@ -117,12 +116,12 @@
     "list": []
   },
   "time": {
-    "from": "2021-08-13T16:30:46.892Z",
-    "to": "2021-08-13T16:40:46.892Z"
+    "from": "now-5m",
+    "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "New dashboard Copy",
-  "uid": "MsrCjm77z",
+  "title": "New dashboard",
+  "uid": "rQssjM77k",
   "version": 1
 }
